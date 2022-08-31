@@ -22,20 +22,15 @@
         <img id="tos-logo" src="./images/TOSCREATIVE LOGO 2 (transparent).png"/>
     </div>
     <div id="homescreen">
-               <h1><em>Of the Sky</em></h1>
+        <h1><em>Of the Sky</em></h1>
         <h2>a text-based adventure game</h2>
         <div id="play-button-div">
-            <button id="play-button">PLAY</button>
+            <button id="play-button" onclick="startGame2()">PLAY</button>
         </div>
         <div id="img-caption">
             <p>artwork by <a href="https://www.deviantart.com/secrethaven" target="_blank">secrethaven</a></p>
-            <p><a href="#" target="_blank">GitHub</a></p>
-            <audio controls autoplay>
-                <source src="./hourglass2.mp3" type="audio/mp3">
-              Your browser does not support the audio element.
-            </audio>
+            <p>(<a href="#" target="_blank">GitHub</a>)</p>
         </div>
-
     </div>
     <div id="page-container">
         <div id="content-wrap">
@@ -43,6 +38,7 @@
                 <h1><em>Of the Sky</em></h1>
             </div>
             <div id="body">
+            <audio id="hourglass-mp3" src="./hourglass2.mp3" loop></audio>
                 <div class="container">
                     <div id="text">Text goes here</div>
                     <div id="text2">Text goes here</div>

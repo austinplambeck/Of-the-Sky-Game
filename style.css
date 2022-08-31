@@ -70,12 +70,16 @@
     text-align: center;
 }
 
+audio {
+    display: none;
+}
+
 #homescreen p, #homescreen a {
     color: black;
-    font-size: 0.75rem;
+    font-size: 1rem;
     margin-top: 0.5vh;
     font-weight: bold;
-    text-shadow: 0.01rem 0.01rem white;
+    text-shadow: 0.03rem 0.03rem white;
 }
 
 #play-button-div {
@@ -86,7 +90,7 @@
 }
 
 #play-button {
-    background-color: rgb(61, 115, 252);
+    background-color: rgb(107, 149, 255);
     border: 2px solid hsl(202, 205, 50);
     padding: 0.5vh;
     font-size: 1.8rem;
@@ -97,6 +101,11 @@
     box-shadow: 0 0 10px 1px;
 }
 
+#play-button:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgb(202, 205, 255);
+}
 
 
 /*GAME SCREEN*/
@@ -106,9 +115,9 @@
     min-height: 100vh;
     background-color: #657ac7;
 
-    /*background-image: url(./images/skyship.jpg);
+    background-image: url(./images/skyship.jpg);
     background-repeat: no-repeat;
-    background-size:cover;*/
+    background-size:cover;
 }
 
 #content-wrap {
@@ -123,18 +132,13 @@ body {
     display: block;
     text-align: center;
     padding-top: 4vh;
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
 }
 
 #title h1, #title em {
     color:black;
-    font-size: 2.4rem;
-}
-
-#title h2 {
-    color: black;
-    font-size: 1.6rem;
-    margin-bottom: 0.5vh;
+    font-size: 4rem;
+    text-shadow: 0.1vh 0.1vh aliceblue;
 }
 
 #body {
@@ -148,7 +152,7 @@ body {
     width: 800px;
     max-width: 83%;
     padding: 2vh;
-    background-color: rgba(204, 213, 255, 0.493);
+    background-color: rgba(204, 213, 255, 0.91);
     box-shadow: 0 0 10px 2px;
     border-radius: 5px;
 }
@@ -167,16 +171,17 @@ body {
 }
 
 .btn {
-    background-color: rgb(202, 205, 255);
+    background-color: rgb(163, 168, 255);
     border: 1px solid hsl(202, 205, 50);
     padding: 0.5vh;
     font-size: 1.2rem;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 .btn:hover {
     color: white;
-    background-color: #181E34;
+    background-color: #5c3601d2;
     border: 1px solid rgb(202, 205, 255);
 }
 
@@ -194,11 +199,12 @@ body {
     margin: 0.25vh;
     font-size: 1rem;
     letter-spacing: 0.06rem;
+    text-shadow: 0.02rem 0.04rem white;
 }
 
 @media only screen and (min-width: 900px) {
     * {
-        font-size: 12pt;
+        font-size: 11pt;
     }
 
     #homescreen {

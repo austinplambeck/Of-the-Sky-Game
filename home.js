@@ -14,4 +14,3 @@ function loadingScreenFunc() {
         homescreen.style.display = 'block';
     }, 1000);
 }
-

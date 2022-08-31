@@ -12,7 +12,17 @@ function startGame() {  // Starts the game on page load, setting the state at th
 }
 
 function startGame2() {
-    
+    const loadingScreen = document.getElementById('loading-screen');
+    const homescreen = document.getElementById('homescreen');
+    const pageContainer = document.getElementById('page-container');
+
+    loadingScreen.style.display = 'none';
+    homescreen.style.display = 'none';
+    pageContainer.style.display = 'block';
+
+    document.getElementById('hourglass-mp3').play()
+
+    startGame();
 }
 
 function showTextNode(textNodeIndex) {  // Displays whichever option we're on; takes a particular textnode index

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./textgame.js"></script>
+    <script defer src="./home.js"></script>
+    <link rel="icon" href="https://images.emojiterra.com/google/noto-emoji/v2.034/512px/2694.png">
+
+    <title>Of the Sky</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Roboto&family=Rubik&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body onload="loadingScreenFunc()">
+    
+    <div id="loading-screen">
+        <img id="tos-logo" src="./images/TOSCREATIVE LOGO 2 (transparent).png"/>
+    </div>
+    <div id="homescreen">
+        <audio controls autoplay>
+            <source src="./hourglass2.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <h1><em>Of the Sky</em></h1>
+        <h2>a text-based adventure game</h2>
+        <div id="img-caption">
+            <p>artwork by <a href="https://www.deviantart.com/secrethaven" target="_blank">secrethaven</a></p>
+            <p><a href="#" target="_blank">GitHub</a></p>
+        </div>
+        <div id="play-button-div">
+            <button id="play-button">PLAY</button>
+        </div>
+    </div>
+    <div id="page-container">
+        <div id="content-wrap">
+            <div id="title">
+                <h1><em>Of the Sky</em></h1>
+            </div>
+            <div id="body">
+                <div class="container">
+                    <div id="text">Text goes here</div>
+                    <div id="text2">Text goes here</div>
+                    <div id="text3">Text goes here</div>
+                    <div id="text4">Text goes here</div>
+                    <div id="option-buttons" class="btn-grid">
+                        <button class="btn">Option 1</button>
+                        <button class="btn">Option 2</button>
+                        <button class="btn">Option 3</button>
+                        <button class="btn">Option 4</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="credits">
+            <h5>a Tales of Storms production</h5>
+            <h5>written and coded by <a href="#">@plamboworld</a></h5>
+            <h5>(<a href="#">GitHub</a>)</h5>
+        </footer>
+    </div>
+</body>
+</html>

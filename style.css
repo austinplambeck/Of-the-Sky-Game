@@ -159,9 +159,10 @@ body {
 }
 
 #text, #text2, #text3, #text4 {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     color: black;
-    margin: 0.75vh;
+    margin: 0 0.5vh 1vh 0.5vh;
+    text-align: justify;
 }
 
 .btn-grid {
@@ -175,7 +176,7 @@ body {
     background-color: rgb(163, 168, 255);
     border: 1px solid hsl(202, 205, 50);
     padding: 0.5vh;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     border-radius: 5px;
     font-weight: bold;
 }

@@ -67,9 +67,9 @@ const textNodes = [  // stores objects of different textNodes in the game
     {
         id: 1,
         text: '"Forward!" shouts a pirate. You step to the edge of the plank, the wood groaning under you. There\'s nothing below you but clouds and a screeching sparrow. One more step and you\'ll be one of the Fallen.',
-        text2: '"Forward!" shouts a pirate. You step to the edge of the plank, the wood groaning under you. There\'s nothing below you but clouds',
-        text3: '"Forward!" shouts a pirate. You step to the edge of the plank, the wood groaning under you. There\'s nothing below you but clouds',
-        text4: '"Forward!" shouts a pirate. You step to the edge of the plank, the wood groaning under you. There\'s nothing below you but clouds"Forward!" shouts a pirate. You step to the edge of the plank, the wood groaning under you. There\'s nothing below you but clouds',
+        text2: 'The boy looked back at Drake and trembled. Drake had never seen someone shake like that, and he certainly hadn\'t seen pee run down someone\'s legs before. What didn\'t soak into the wood dripped off the edges, seemingly falling forever.',
+        text3: '"Come on!" shouts a pirate. You step to the edge of the plank, the wood groaning under you. There\'s nothing below you but clouds',
+        text4: 'He was weak. Drake could see that, clear as day. Just as these pirates could see it. And that was exactly why Drake held in his emotions. Why he hadn\'t said a word all morning, nor the night before, even while knowing this day would be his very last.',
         options: [  // button options to pick from in this textNode
             {
                 text: 'Plead your case to the pirates.',  // text in the option button

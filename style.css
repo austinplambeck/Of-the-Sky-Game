@@ -36,7 +36,7 @@
     padding-top: 12vh;
     animation: fade 1s linear;
     text-align: center;
-    background-image: url(./images/skyship.jpg);
+    background-image: url(./images/skyship2.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     height: 100vh;
@@ -75,11 +75,12 @@ audio {
 }
 
 #homescreen p, #homescreen a {
-    color: black;
-    font-size: 1rem;
+    color: white;
+    font-size: 1.1rem;
     margin-top: 0.5vh;
     font-weight: bold;
-    text-shadow: 0.03rem 0.03rem white;
+    letter-spacing: 0.03rem;
+    text-shadow: 0.1rem 0.1rem black;
 }
 
 #play-button-div {
@@ -115,7 +116,7 @@ audio {
     min-height: 100vh;
     background-color: #657ac7;
 
-    background-image: url(./images/skyship.jpg);
+    background-image: url(./images/skyship2.jpg);
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -195,11 +196,12 @@ body {
 }
 
 #credits h5, #credits a {
-    color: black;
+    color: white;
     margin: 0.25vh;
-    font-size: 1rem;
-    letter-spacing: 0.06rem;
-    text-shadow: 0.02rem 0.04rem white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 0.03rem;
+    text-shadow: 0.1rem 0.1rem black;
 }
 
 @media only screen and (min-width: 900px) {
@@ -208,11 +210,36 @@ body {
     }
 
     #homescreen {
-        background-image: url(./images/skyship.jpg);
-        background-position: 0 70%;
+        padding-top: 25vh;
+        background-image: url(./images/skyship2.jpg);
+        background-position: 0 62%;
         background-repeat: no-repeat;
         background-size:cover;
         height: 100vh;
+    }
+
+    #homescreen p, #homescreen a {
+        color: white;
+        font-size: 1.2rem;
+        margin-top: 0.5vh;
+        font-weight: bold;
+        text-shadow: 0.03rem 0.03rem black;
+    }
+
+    #page-container {
+        background-image: url(./images/skyship2.jpg);
+        background-position: 0 62%;
+        background-repeat: no-repeat;
+        background-size:cover;
+        height: 100vh;
+    }
+
+    #credits h5, #credits a {
+        color: white;
+        margin: 0.25vh;
+        font-size: 1.2rem;
+        letter-spacing: 0.03rem;
+        text-shadow: 0.03rem 0.03rem black;
     }
 
 }

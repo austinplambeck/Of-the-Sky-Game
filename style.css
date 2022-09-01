@@ -75,12 +75,11 @@ audio {
 }
 
 #homescreen p, #homescreen a {
-    color: white;
+    color: black;
     font-size: 1.1rem;
     margin-top: 0.5vh;
     font-weight: bold;
     letter-spacing: 0.03rem;
-    text-shadow: 0.1rem 0.1rem black;
 }
 
 #play-button-div {
@@ -111,11 +110,94 @@ audio {
 
 /*GAME SCREEN*/
 
+#exit-button {
+    border-radius: 2px;
+    font-size: 1.2rem;
+    padding: 0.5vh;
+    position: absolute;
+    left: 3vw;
+    top: 2vh;
+    background-color: rgb(163, 168, 255);
+    line-height: 1.1rem;
+    border: none;
+    box-shadow: 0 0 7px 2px;
+    font-weight: bold;
+}
+
+#volume-button {
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 1vh;
+    position: absolute;
+    right: 3vw;
+    top: 2vh;
+    border: none;
+    box-shadow: 0 0 7px 2px;
+    background-color: rgb(163, 168, 255);
+}
+
+/*EXIT MESSAGE*/
+
+#exit-blur {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgba(107, 149, 255, 0.836);
+    z-index: 50;
+}
+
+#exit-message {
+    position: relative
+}
+
+#exit-message-container {
+    padding: 1.5vh;
+    border: 4px solid red;
+    background-color: white;
+    max-width: 400px;
+    height: 30vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    width: 85%;
+    z-index: 99;
+}
+
+#exit-message h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#exit-message-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin-top: -1vh;
+}
+
+#exit-message button {
+    font-size: 1.8rem;
+    margin: 4vh 2vh 2vh 2vh;
+    background-color: rgb(192, 193, 207);
+}
+
+#exit-message button:hover {
+    background-color: rgb(84, 84, 97);
+    color: white;
+}
+
+
+/*GAME SCREEN (cont)*/
+
 #page-container {
     position: relative;
     min-height: 100vh;
     background-color: #657ac7;
-
     background-image: url(./images/skyship2.jpg);
     background-repeat: no-repeat;
     background-size:cover;
@@ -132,7 +214,7 @@ body {
 #title {
     display: block;
     text-align: center;
-    padding-top: 4vh;
+    padding-top: 5vh;
     margin-bottom: 2vh;
 }
 
@@ -197,12 +279,11 @@ body {
 }
 
 #credits h5, #credits a {
-    color: white;
+    color: black;
     margin: 0.25vh;
     font-size: 1.1rem;
     font-weight: bold;
     letter-spacing: 0.03rem;
-    text-shadow: 0.1rem 0.1rem black;
 }
 
 @media only screen and (min-width: 900px) {
@@ -224,7 +305,7 @@ body {
         font-size: 1.2rem;
         margin-top: 0.5vh;
         font-weight: bold;
-        text-shadow: 0.03rem 0.03rem black;
+        text-shadow: 0.1rem 0.1rem black;
     }
 
     #page-container {
@@ -235,12 +316,63 @@ body {
         height: 100vh;
     }
 
+    #exit-button {
+        border-radius: 5px;
+        font-size: 1.5rem;
+        padding: 0.5vh;
+        position: absolute;
+        left: 3vw;
+        top: 2vh;
+        line-height: 1.5rem;
+    }
+    
+    #volume-button {
+        border-radius: 5px;
+        font-size: 1.65rem;
+        padding: 1vh;
+        position: absolute;
+        right: 3vw;
+        top: 2vh;
+        line-height: 2.4rem;
+    }
+
+    #exit-message-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        margin-top: -2vh;
+    }
+
+    #exit-message button {
+        font-size: 2rem;
+        margin: 4vh;
+        background-color: rgb(192, 193, 207);
+    }
+
+    #exit-message h3 {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #title {
+        padding-top: 4vh;
+    }
+
     #credits h5, #credits a {
         color: white;
         margin: 0.25vh;
         font-size: 1.2rem;
         letter-spacing: 0.03rem;
-        text-shadow: 0.03rem 0.03rem black;
+        text-shadow: 0.1rem 0.1rem black;
+    }
+
+    #credits {
+        position: absolute;
+        bottom: 0;
+        height: 12.5vh;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 3vh;
     }
 
 }

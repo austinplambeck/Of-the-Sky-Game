@@ -4,6 +4,9 @@ const textElement3 = document.getElementById('text3');  // text Node display 2
 const textElement4 = document.getElementById('text4');  // text Node display 2
 const optionButtonsElement = document.getElementById('option-buttons');
 
+const exitMessage2 = document.getElementById('exit-message');
+const exitBlur2 = document.getElementById('exit-blur');
+
 let state = {};  // A state variable of an empty object, used to keep track of the story and certain selected events
 
 function startGame() {  // Starts the game on page load, setting the state at the beginning
@@ -15,10 +18,14 @@ function startGame2() {
     const loadingScreen = document.getElementById('loading-screen');
     const homescreen = document.getElementById('homescreen');
     const pageContainer = document.getElementById('page-container');
+    const body = document.getElementById('body');
 
+    exitMessage2.style.display = 'none';
+    exitBlur2.style.display = 'none';
     loadingScreen.style.display = 'none';
     homescreen.style.display = 'none';
     pageContainer.style.display = 'block';
+    body.style.display = 'flex';
 
     document.getElementById('hourglass-mp3').play()
 

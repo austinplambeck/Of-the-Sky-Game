@@ -10,7 +10,7 @@
 
 @keyframes fade {
     0% { opacity: 0 }
-    75% { opacity: 1 }
+    85% { opacity: 1 }
 }
 
 /*LOADING SCREEN*/
@@ -23,7 +23,7 @@
     margin-right: auto;
     position: relative;
     top: 20vh;
-    animation: fade 1s linear; 
+    animation: fade 2s linear; 
 }
 
 
@@ -158,7 +158,7 @@ audio {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color:rgba(107, 149, 255, 0.836);
+    background-color:rgba(107, 149, 255, 0.89);
     z-index: 50;
 }
 
@@ -168,8 +168,8 @@ audio {
 
 #exit-message-container {
     padding: 3vh;
-    border: 4px solid red;
-    background-color: white;
+    border: 4px solid black;
+    background-color: rgba(163, 168, 255, 0.893);
     max-width: 400px;
     position: absolute;
     top: 50%;
@@ -192,9 +192,11 @@ audio {
 }
 
 #exit-message button {
+    border-radius: 5px;
+    color: white;
     font-size: 1.8rem;
     margin: 2vh 2vh 0vh 2vh;
-    background-color: rgb(192, 193, 207);
+    background-color: black;
 }
 
 #exit-message button:hover {
@@ -246,7 +248,7 @@ body {
     width: 800px;
     max-width: 83%;
     padding: 2vh;
-    background-color: rgba(204, 213, 255, 0.91);
+    background-color: rgba(204, 213, 255, 0.938);
     box-shadow: 0 0 10px 2px;
     border-radius: 5px;
 }
@@ -354,8 +356,6 @@ body {
 
     #exit-message-container {
         padding: 3vh;
-        border: 4px solid red;
-        background-color: white;
         max-width: 450px;
         position: absolute;
         top: 50%;
@@ -374,7 +374,6 @@ body {
     #exit-message button {
         font-size: 2rem;
         margin: 2vh;
-        background-color: rgb(192, 193, 207);
     }
 
     #exit-message h3 {

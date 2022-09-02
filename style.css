@@ -94,7 +94,7 @@ audio {
 
 #play-button {
     background-color: rgb(107, 149, 255);
-    border: 2px solid hsl(202, 205, 50);
+    border: 2px solid black;
     padding: 0.5vh;
     font-size: 1.8rem;
     font-weight: bold;

@@ -63,23 +63,28 @@
     box-shadow: 0 0 10px 3px;
 }
 
-#img-caption {
+#home-credits {
     position: absolute;
-    bottom: 2vh;
+    bottom: 0;
+    height: 13vh;
     width: 100%;
     text-align: center;
+    padding-bottom: 3vh;
 }
+
+
 
 audio {
     display: none;
 }
 
 #homescreen p, #homescreen a {
-    color: black;
-    font-size: 1.1rem;
-    margin-top: 0.5vh;
+    color: white;
+    margin: 0.25vh;
+    font-size: 1.2rem;
     font-weight: bold;
     letter-spacing: 0.03rem;
+    text-shadow: 0.1rem 0.1rem black;
 }
 
 #play-button-div {
@@ -155,21 +160,20 @@ audio {
 }
 
 #exit-message-container {
-    padding: 1.5vh;
+    padding: 3vh;
     border: 4px solid red;
     background-color: white;
     max-width: 400px;
-    height: 30vh;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 100%);
+    transform: translate(-50%, 110%);
     width: 85%;
     z-index: 99;
 }
 
 #exit-message h3 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: bold;
     text-align: center;
 }
@@ -182,7 +186,7 @@ audio {
 
 #exit-message button {
     font-size: 1.8rem;
-    margin: 4vh 2vh 2vh 2vh;
+    margin: 2vh 2vh 0vh 2vh;
     background-color: rgb(192, 193, 207);
 }
 
@@ -279,11 +283,12 @@ body {
 }
 
 #credits h5, #credits a {
-    color: black;
+    color: white;
     margin: 0.25vh;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     letter-spacing: 0.03rem;
+    text-shadow: 0.1rem 0.1rem black;
 }
 
 @media only screen and (min-width: 900px) {
@@ -336,15 +341,28 @@ body {
         line-height: 2.4rem;
     }
 
+    #exit-message-container {
+        padding: 3vh;
+        border: 4px solid red;
+        background-color: white;
+        max-width: 450px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 65%);
+        width: 85%;
+        z-index: 99;
+    }
+
     #exit-message-buttons {
         display: grid;
         grid-template-columns: repeat(2, auto);
-        margin-top: -2vh;
+        margin-top: 2vh;
     }
 
     #exit-message button {
         font-size: 2rem;
-        margin: 4vh;
+        margin: 2vh;
         background-color: rgb(192, 193, 207);
     }
 

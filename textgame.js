@@ -14,6 +14,7 @@ function startGame() {  // Starts the game on page load, setting the state at th
     showTextNode(1);  // shows the first textNode of the game. Info is stored in the textNodes variable of objects
 }
 
+//  Second start game function
 function startGame2() {
     const loadingScreen = document.getElementById('loading-screen');
     const homescreen = document.getElementById('homescreen');
@@ -27,10 +28,29 @@ function startGame2() {
     pageContainer.style.display = 'block';
     body.style.display = 'flex';
 
-    document.getElementById('hourglass-mp3').play()
+    volumeButton.innerHTML = '🔊';
+    music.play()
+    music.currentTime = 0;
 
     startGame();
 }
+
+//MUSIC===================================
+
+const music = document.getElementById('hourglass-mp3');
+const volumeButton = document.getElementById('volume-button');
+
+function toggleMusic() {
+    if(music.paused) {
+        music.play();
+        volumeButton.innerHTML = '🔊';
+    } else {
+        music.pause();
+        volumeButton.innerHTML = '🔇';
+    }
+}
+
+//========================================
 
 function showTextNode(textNodeIndex) {  // Displays whichever option we're on; takes a particular textnode index
     const textNode = textNodes.find(textNode => textNode.id === textNodeIndex);  // getting textNode with our current ID
@@ -70,6 +90,10 @@ function selectOption(option) {  // Runs every time we select an option; takes w
     showTextNode(nextTextNodeId);  // showing the textNode for the nextText ID
 }
 
+
+
+// ============ GAME CONTENT STARTS HERE ==================
+
 const textNodes = [  // stores objects of different textNodes in the game
     {
         id: 1,
@@ -80,22 +104,22 @@ const textNodes = [  // stores objects of different textNodes in the game
         options: [  // button options to pick from in this textNode
             {
                 text: 'Plead your case to the pirates.',  // text in the option button
-                setState: {plead: true},  // sets a state to keep track of
+                //setState: {plead: true},  // sets a state to keep track of
                 nextText: 2  // if this option is clicked, we're sent to textNode ID #2
             },
             {
                 text: 'Try to grab a pirate\'s sword.',
-                setState: {grabSword: true},
+                //setState: {grabSword: true},
                 nextText: 3
             },
             {
                 text: 'Give up and jump.',
-                setState: {jumpToDeath: true},
+                //setState: {jumpToDeath: true},
                 nextText: 99
             },
             {
                 text: 'Give up and jump.',
-                setState: {jumpToDeath: true},
+                //setState: {jumpToDeath: true},
                 nextText: 99
             }
         ]  
@@ -107,14 +131,14 @@ const textNodes = [  // stores objects of different textNodes in the game
         options: [
             {
                 text: 'Scream',
-                requiredState: (currentState) => currentState.plead,  // if we have the currentState, then this option is shown
-                setState: {plead: false, pushed: true},  // sets a new state based off the choice
+                //requiredState: (currentState) => currentState.plead,  // if we have the currentState, then this option is shown
+                //setState: {plead: false, pushed: true},  // sets a new state based off the choice
                 nextText: 3
             },
             {
                 text: 'Cry',
-                requiredState: (currentState) => currentState.plead,
-                setState: {plead: false, pushed: true},
+                //requiredState: (currentState) => currentState.plead,
+                //setState: {plead: false, pushed: true},
                 nextText: 3
             }
         ]
@@ -126,14 +150,14 @@ const textNodes = [  // stores objects of different textNodes in the game
         options: [
             {
                 text: 'Thank the god.',
-                requiredState: (currentState) => currentState.pushed,
-                setState: {pushed: false, caughtByGod: true},
+                //requiredState: (currentState) => currentState.pushed,
+                //setState: {pushed: false, caughtByGod: true},
                 nextText: 5
             },
             {
                 text: 'Grab an oar and row for your life',
-                requiredState: (currentState) => currentState.boatSeesYou,
-                setState: {boatSeesYou: false, rowing: true},
+                //requiredState: (currentState) => currentState.boatSeesYou,
+                //setState: {boatSeesYou: false, rowing: true},
                 nextText: 4
             }
          ]

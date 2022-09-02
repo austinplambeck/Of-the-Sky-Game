@@ -121,7 +121,7 @@ audio {
     padding: 0.5vh;
     position: absolute;
     left: 3vw;
-    top: 2vh;
+    top: 3.5vh;
     background-color: rgb(163, 168, 255);
     line-height: 1.1rem;
     border: none;
@@ -137,16 +137,12 @@ audio {
     padding: 0.5vh;
     position: absolute;
     right: 3vw;
-    top: 2vh;
+    top: 3.5vh;
     border: none;
     box-shadow: 0 0 7px 2px;
     background-color: rgb(163, 168, 255);
 }
 
-#exit-button:hover, #volume-button:hover {
-    background-color: rgb(84, 84, 97);
-    color: white;
-}
 
 /*EXIT MESSAGE*/
 
@@ -174,7 +170,7 @@ audio {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 85%);
+    transform: translate(-50%, 95%);
     width: 85%;
     z-index: 99;
 }
@@ -228,13 +224,13 @@ body {
 #title {
     display: block;
     text-align: center;
-    padding-top: 5vh;
+    padding-top: 2vh;
     margin-bottom: 2vh;
 }
 
 #title h1, #title em {
     color:black;
-    font-size: 4rem;
+    font-size: 3.5rem;
     text-shadow: 0.1vh 0.1vh aliceblue;
 }
 
@@ -270,7 +266,7 @@ body {
 
 .btn {
     background-color: rgb(163, 168, 255);
-    border: 1px solid hsl(202, 205, 50);
+    border: 2px solid black;
     padding: 0.5vh;
     font-size: 1.3rem;
     border-radius: 5px;
@@ -280,7 +276,7 @@ body {
 .btn:hover {
     color: white;
     background-color: #5c3601d2;
-    border: 1px solid rgb(202, 205, 255);
+    border: 2px solid rgb(202, 205, 255);
 }
 
 #credits {
@@ -355,6 +351,11 @@ body {
         line-height: 2.4rem;
     }
 
+    #exit-button:hover, #volume-button:hover {
+        background-color: rgb(84, 84, 97);
+        color: white;
+    }
+
     #exit-message-container {
         padding: 3vh;
         max-width: 450px;
@@ -385,6 +386,12 @@ body {
 
     #title {
         padding-top: 4vh;
+    }
+
+    #title h1, #title em {
+        color:black;
+        font-size: 4rem;
+        text-shadow: 0.1vh 0.1vh aliceblue;
     }
 
     #credits h5, #credits a {

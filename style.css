@@ -167,7 +167,7 @@ audio {
 }
 
 #exit-message-container {
-    padding: 3vh;
+    padding: 2vh;
     border: 4px solid black;
     background-color: rgba(163, 168, 255, 0.893);
     max-width: 400px;
@@ -180,7 +180,7 @@ audio {
 }
 
 #exit-message h3 {
-    font-size: 1.65rem;
+    font-size: 1.6rem;
     font-weight: bold;
     text-align: center;
 }
@@ -192,6 +192,7 @@ audio {
 }
 
 #exit-message button {
+    border: 1px solid black;
     border-radius: 5px;
     color: white;
     font-size: 1.8rem;

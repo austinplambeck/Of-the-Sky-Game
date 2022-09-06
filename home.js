@@ -12,5 +12,5 @@ function loadingScreenFunc() {
     setTimeout(function () {
         loadingScreen.style.display = 'none';
         homescreen.style.display = 'block';
-    }, 2000);
+    }, 500);
 }

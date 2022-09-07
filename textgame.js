@@ -1,7 +1,8 @@
 const textElement = document.getElementById('text');  // text Node display 1
 const textElement2 = document.getElementById('text2');  // text Node display 2
-const textElement3 = document.getElementById('text3');  // text Node display 2
-const textElement4 = document.getElementById('text4');  // text Node display 2
+const textElement3 = document.getElementById('text3');  // text Node display 3
+const textElement4 = document.getElementById('text4');  // text Node display 4
+const textElement5 = document.getElementById('text5');  // text Node display 5
 const optionButtonsElement = document.getElementById('option-buttons');
 
 const exitMessage2 = document.getElementById('exit-message');
@@ -60,6 +61,7 @@ function showTextNode(textNodeIndex) {  // Displays whichever option we're on; t
     textElement2.innerText = textNode.text2;
     textElement3.innerText = textNode.text3;
     textElement4.innerText = textNode.text4;
+    textElement5.innerText = textNode.text5;
 
     while (optionButtonsElement.firstChild) {  // this REMOVES the sample option buttons (4) that are written in HTML
         optionButtonsElement.removeChild(optionButtonsElement.firstChild);

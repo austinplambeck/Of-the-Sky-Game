@@ -226,13 +226,13 @@ body {
 #title {
     display: block;
     text-align: center;
-    padding-top: 2vh;
-    margin-bottom: 2vh;
+    padding-top: 1vh;
+    margin-bottom: 1vh;
 }
 
 #title h1, #title em {
     color:black;
-    font-size: 3.75rem;
+    font-size: 4rem;
     text-shadow: 0.1vh 0.1vh aliceblue;
 }
 
@@ -252,7 +252,7 @@ body {
     border-radius: 5px;
 }
 
-#text, #text2, #text3, #text4 {
+#text, #text2, #text3, #text4, #text5 {
     font-size: 1.25rem;
     color: black;
     margin: 0 0.5vh 1vh 0.5vh;
